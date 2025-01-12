@@ -6,7 +6,7 @@ public class TwoSumProblem1 {
         for (int i = 0; i < nums.length; i++) {
             for(int j=1 ; j< nums.length; j++){
                 if(nums[i]+ nums[j] == target){
-                  return new int[] {nums[i],nums[j]};
+                  return new int[] {i,j};
                 }
             }
 
@@ -22,7 +22,7 @@ public class TwoSumProblem1 {
             if(hash.containsKey(value)){ // checking if its present in hash map ?
                 return new int[]{hash.get(value), i}; //
             }else{
-                hash.put(i,nums[i]);
+                hash.put(nums[i],i);
             }
 
         }
