@@ -11,14 +11,15 @@ public class FibonacciSeries {
         int a =0;
         int b =1;
         int count = 2;
-        while (count < n){
+        while (count <n){
             int temp = b;
             b = a+b;
             a = temp;
             count ++;
-
+            System.out.print( b + " " );
         }
-        System.out.println(b);
+
+
 
     }
 }
