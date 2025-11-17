@@ -17,6 +17,6 @@ public class ScoreOfString {
 
 
 
-        // 2. absolute diff between them
+
     }
 }
